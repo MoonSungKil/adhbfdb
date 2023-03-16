@@ -1,4 +1,4 @@
-/* .list_journals {
+.list_journals {
   margin: 5rem 3rem 10rem 3rem;
   width: 80%;
   backdrop-filter: blur(10px);
@@ -244,4 +244,4 @@
   color: rgb(182, 25, 59);
   background-color: var(--textColor);
   font-weight: bold;
-} */
+}
