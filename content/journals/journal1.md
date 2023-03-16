@@ -7,7 +7,7 @@ publishers: "Harper Collins"
 tags: [poetry, disquiet, realism, philisopgy, existencialism, pessoa]
 categories: [Poetry, Existencialism]
 image: "/img/covers/the-book-of-disquiet.jpg"
-publisherLogo: "img/publishers/harper-collins.jpg"
+publisherLogo: "/img/publishers/harper-collins.jpg"
 pdf: "docs/the-book-of-disquiet.pdf"
 references: [
     "Pessoa, Fernando. The Book of Disquiet. Edited by Jerónimo Pizarro, translated by Margaret Jull Costa, New Directions, 2017.",
