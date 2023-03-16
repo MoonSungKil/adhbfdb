@@ -8,7 +8,7 @@ tags: [poetry, disquiet, realism, philisopgy, existencialism, pessoa]
 categories: [Poetry, Existencialism]
 image: "/img/covers/the-book-of-disquiet.jpg"
 publisherLogo: "img/publishers/harper-collins.jpg"
-pdf: "static/docs/the-book-of-disquiet.pdf"
+pdf: "docs/the-book-of-disquiet.pdf"
 references: [
     "Pessoa, Fernando. The Book of Disquiet. Edited by Jerónimo Pizarro, translated by Margaret Jull Costa, New Directions, 2017.",
     "Zenith, Richard. Fernando Pessoa: The Book of Disquiet. Grove Press, 1991.",
