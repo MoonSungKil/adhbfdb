@@ -6,7 +6,7 @@ authors: "Fernando Pessoa"
 publishers: "Harper Collins"
 tags: [poetry, disquiet, realism, philisopgy, existencialism, pessoa]
 categories: [Poetry, Existencialism]
-image: "/covers/the-book-of-disquiet.jpg"
+image: /covers/the-book-of-disquiet.jpg
 publisherLogo: "img/publishers/harper-collins.jpg"
 pdf: "../../static/docs/the-book-of-disquiet.pdf"
 references: [
