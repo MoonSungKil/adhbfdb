@@ -13,15 +13,7 @@
     <h1 class="single_journal_title md-4 mb-4">{{ .Title}}</h1>
     <div class="single_journal_meta_data mb-4">
       <div class="single_journal_image">
-<<<<<<< HEAD
         <img class="single_journal_image" src="{{ .Site.BaseURL }}{{ .Params.image}}" alt="{{ .Title}}" />
-=======
-<!--         <img class="single_journal_image" src="../../static/img/covers/{{ .Params.image}}" alt="{{ .Title}}" /> -->
-
-         <img class="single_journal_image" src="{{ .Site.BaseURL }}{{ .Params.image }}" alt="{{ .Title }}" />
-
-
->>>>>>> d69ef85b970aac36524d0323b201c13e9dc22faa
       </div>
       <div class="single_journal_info">
         <span class="single_journal_author">Written by: 
@@ -137,10 +129,6 @@
     {{ if .Params.pdf}}
     <hr />
     <a class="single_journal_pdf_download" href="{{ .Site.BaseURL }}{{ .Params.pdf}}" download="">Download PDF</a>
-<<<<<<< HEAD
-=======
-   
->>>>>>> d69ef85b970aac36524d0323b201c13e9dc22faa
     {{ end}}
 
   </article>
