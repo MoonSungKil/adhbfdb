@@ -2,7 +2,7 @@
 {{ if .Params.pdf}}
 <div class="single_journal_pdf_banner">
   <h4>{{ .Title}}</h4>
-  <a class="single_journal_pdf_banner_download" href="{{ .Params.pdf}}" download=""><span>
+  <a class="single_journal_pdf_banner_download" href="{{ .Site.BaseURL }}{{ .Params.pdf}}" download=""><span>
     Download PDF
   </span>
   <i class="fa-solid fa-download"></i></a>
@@ -13,14 +13,14 @@
     <h1 class="single_journal_title md-4 mb-4">{{ .Title}}</h1>
     <div class="single_journal_meta_data mb-4">
       <div class="single_journal_image">
-        <img class="single_journal_image" src="{{ .Params.image}}" alt="{{ .Title}}" />
+        <img class="single_journal_image" src="{{ .Site.BaseURL }}{{ .Params.image}}" alt="{{ .Title}}" />
       </div>
       <div class="single_journal_info">
         <span class="single_journal_author">Written by: 
-        <a href="{{ "/authors/" | relLangURL }}{{ .Params.authors | urlize }}">{{ .Params.authors }}</a></span>
+        <a href="{{ .Site.BaseURL }}{{ "/authors/" | relLangURL }}{{ .Params.authors | urlize }}">{{ .Params.authors }}</a></span>
         <span class="single_journal_publisher">Published by: 
           
-          <a href="{{ "/publishers/" | relLangURL }}{{ .Params.publishers | urlize }}">  {{ .Params.publishers}}</a>
+          <a href="{{ .Site.BaseURL }}{{ "/publishers/" | relLangURL }}{{ .Params.publishers | urlize }}">  {{ .Params.publishers}}</a>
         </span>
         <span class="single_journal_date_created">
           <time>Published at: {{ dateFormat .Site.Params.dateFormat .Date}}</time>
@@ -128,7 +128,7 @@
     </div>
     {{ if .Params.pdf}}
     <hr />
-    <a class="single_journal_pdf_download" href="{{ .Params.pdf}}" download="">Download PDF</a>
+    <a class="single_journal_pdf_download" href="{{ .Site.BaseURL }}{{ .Params.pdf}}" download="">Download PDF</a>
     {{ end}}
   </article>
   <!-- {{ if .Params.publisherLogo}}
