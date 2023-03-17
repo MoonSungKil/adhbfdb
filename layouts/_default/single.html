@@ -2,7 +2,7 @@
 {{ if .Params.pdf}}
 <div class="single_journal_pdf_banner">
   <h4>{{ .Title}}</h4>
-  <a class="single_journal_pdf_banner_download" href="{{ .Params.pdf}}" download=""><span>
+  <a class="single_journal_pdf_banner_download" href="{{ .Site.BaseURL }}{{ .Params.pdf}}" download=""><span>
     Download PDF
   </span>
   <i class="fa-solid fa-download"></i></a>
@@ -132,7 +132,7 @@
     </div>
     {{ if .Params.pdf}}
     <hr />
-    <a class="single_journal_pdf_download" href="{{ .Params.pdf}}" download="">Download PDF</a>
+    <a class="single_journal_pdf_download" href="{{ .Site.BaseURL }}{{ .Params.pdf}}" download="">Download PDF</a>
    
     {{ end}}
      <p> here params {{ .Params.pdf}}  </p>
