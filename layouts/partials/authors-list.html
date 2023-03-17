@@ -25,7 +25,7 @@
                     use the merge function to add the author to the $renderedAuthors dictionary with a value of true. This ensures that we don't render the same author name again in future iterations of the loop. -->
         {{ $renderedAuthors = merge $renderedAuthors (dict $authorTrimmed true) }}
 
-        <a href="/authors/{{ $authorTrimmed | urlize }}/">{{ $authorTrimmed }}</a>
+       <a href="{{ .Site.BaseURL }}authors/{{ $authorTrimmed | urlize }}/">{{ $authorTrimmed }}</a>
         {{ end }} {{ end }} {{ end }} {{ end }}
       </div>
     </div>
