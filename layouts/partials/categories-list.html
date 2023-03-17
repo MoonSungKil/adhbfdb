@@ -23,7 +23,7 @@
         <!-- use the merge function to add the category to the $renderedCategories dictionary with a value of true. This ensures that we don't render the same category name again in future iterations of the loop. -->
         {{ $renderedCategories = merge $renderedCategories (dict $categoryTrimmed true) }}
 
-        <a href="/categories/{{ $categoryTrimmed | urlize }}/">{{ $categoryTrimmed }}</a>
+        <a href="{{ .Site.BaseURL }}/categories/{{ $categoryTrimmed | urlize }}/">{{ $categoryTrimmed }}</a>
         {{ end }} {{ end }} {{ end }}
       </div>
     </div>
